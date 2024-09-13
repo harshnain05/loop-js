@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
 
         <title>js loop task</title>
         <meta name="title" content="loop js" />
         <meta name="description" content="" />
-        
+
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://strong-lamington-f8f08f.netlify.app" />
         <meta property="og:title" content="loop js" />
         <meta property="og:description" content="" />
         <meta property="og:image" content="/js-img.png" />
-        
+
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://strong-lamington-f8f08f.netlify.app" />
         <meta property="twitter:title" content="loop js" />
         <meta property="twitter:description" content="" />
         <meta property="twitter:image" content="/js-img.png" />
-</head>
-<body>
-   <section  style="display: flex; gap: 100px;">
+    </head>
 
-    <div>
-        <p>addition</p>
-        <p id="add"></p>
-    </div>
+    <body>
+        <section style="display: flex; gap: 100px;">
 
-    <div>
-        <p>subtract</p>
-        <p id="subtract"></p>
-    </div>
+            <div>
+                <p>addition</p>
+                <p id="add"></p>
+            </div>
 
-                    <div>
-                        <p>multyply</p>
-                        <p id="table"></p>
-                    </div>
-                
-                  
-                </div>
-            </section>
-    <script>
+            <div>
+                <p>subtract</p>
+                <p id="subtract"></p>
+            </div>
+
+            <div>
+                <p>multyply</p>
+                <p id="table"></p>
+            </div>
 
 
-    let add = 30;
-    let answer = "";
-    let i = 1;
-    while (i <= 10) {
-        answer += add + " + " + i + " = " + (add + i) + "<br>";
-        i++;
-    }
-    document.getElementById("add").innerHTML = answer;
+            </div>
+        </section>
+        <script>
+
+
+            let add = 30;
+            let answer = "";
+            let i = 1;
+            while (i <= 10) {
+                answer += add + " + " + i + " = " + (add + i) + "<br>";
+                i++;
+            }
+            document.getElementById("add").innerHTML = answer;
 
 
 
-    let table = 9;
-    let result = "";
-    for (let i = 1; i <= 10; i++) {
-        result += table + " * " + i + " = " + table * i + "<br>";
-    }
-    document.getElementById("table").innerHTML = result;
-    
-    
-    let subtract = 100;
-    let a = "";
-    let s = 0;
-    do {
-        a += subtract + " - " + s + " = " + (subtract - s) + "<br>";
-        s++;
-    } while (s < 10);
-    document.getElementById('subtract').innerHTML = a;
-    
-    
-    
-    </script>
-</body>
+            let table = 9;
+            let result = "";
+            for (let i = 1; i <= 10; i++) {
+                result += table + " * " + i + " = " + table * i + "<br>";
+            }
+            document.getElementById("table").innerHTML = result;
+
+
+            let subtract = 100;
+            let a = "";
+            let s = 0;
+            do {
+                a += subtract + " - " + s + " = " + (subtract - s) + "<br>";
+                s++;
+            } while (s < 10);
+            document.getElementById('subtract').innerHTML = a;
+
+
+
+        </script>
+    </body>
+
 </html>
